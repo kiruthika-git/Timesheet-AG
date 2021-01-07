@@ -1,0 +1,175 @@
+<html>
+<head>
+
+<title>TimeSheet AS</title>
+
+<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+<title>TimeSheet AS</title>
+<link rel="stylesheet" type="text/css" href="file:///Users/brimmac/Desktop/project.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+<link href="https://fonts.googleapis.com/css2? family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+</div>
+    <header>
+        <nav>
+        <ul>
+           <li> <i class="material-icons">home</i></li>
+            <li> <a href ="">Time</a></li>
+            <li> <a href ="">Projects</a></li>
+            <li> <a href ="">Report</a></li>
+            </ul>
+            <a href="#" class="Help">Help</a>
+            
+             </nav>
+            
+                
+             
+
+
+    </header>
+            
+    <a href="#" class="button1"><</a>
+    <a href="#" class="button2">></a>
+
+    <a href="#" class="button3">day</a>
+    <a href="#" class="button4">week</a>
+
+    <h2>Tuesday,10 Nov</h2>
+    <sup>
+        <a href="Return to today">Return to today</a>
+    </sup>
+    <a href="https://calendar.google.com/calendar/u/1/r"><i class="fa fa-calendar" id="calendericon" style="font-size:11px"></i></a>
+  <button id= "id01" class="fa fa-plus fa-2x" aria-hidden="true"></button>      
+        <div class="belowicon">
+            <p> New entry</p>
+        </div>
+  
+   
+   
+      <div class="link">
+      <a href="copy over all rows from most recent timesheets">copy over all rows from most recent timesheets</a>
+      </div>
+
+      <button type="button"  id ="btnM" class="buttonM">M<br><p id="timeM">0:00</p></button>
+      <button type="button" id ="btnT"  class="buttonT">T<br><p id="timeT">0:00</p></button>
+      <button  type="button" id ="btnW" class="buttonW">W<br><p id="timeW">0:00</p></button>
+      <button  type="button" id ="btnTh" class="buttonTh">Th<br><p id="timeTh">0:00</p></button>
+      <button  type="button" id ="btnF" class="buttonF">F<br><p id="timeF">0:00</p></button>
+      <button type="button"  id ="btnS" class="buttonS">S<br><p id="timeS">0:00</p></button>
+      <button type="button"  id ="btnSu" class="buttonSu">Su<br><p id="timeSu">0:00</p></button>
+      <button  type="button" id ="btnT" class="buttonTotal">Total<p id="timeTotal">0:00</p></button>
+      <template id="myTemplate">
+        <div id = "tempbox" class="box">
+          <div>
+            <h4 class="temp"><span id= "trial" class ="output"></span></h4>
+            
+            <p4 class="p4"><span  id= "trial2"  class ="output2"></span></p4>
+            
+            <p id="demo"></p>
+            <p id="demo1"></p>
+            <div class="container">
+
+              <!-- <div id="display">
+                  00:00:00
+              </div> -->
+      
+              <!-- <div class="timerbtn">
+                  <button id="startStop" onclick="startStop()">Start</button> 
+                  <button id="reset" onclick="reset()">Reset</button>
+              </div> -->
+      
+          </div>
+          
+            <hr  size="1" width="100%" color=" lightgrey">  
+          </div>
+        </div>
+        </template>
+
+      <a href="#" class="buttonsubmit"><p id="buttonsubmit">Submit week for approval</p></a>
+
+<div id="mymodal" class="bg-modal">
+    <div class="modal-content">
+        <div class="Newentry">
+            <p id="NewTimeEntry">New Time Entry</p>
+            <p id="Tuesday"> Tuesday,11 Nov</p>
+        </div>
+    </div>
+    
+    <button type="button" id = "timerbutton" onclick="getOption() ; getOption2(); pushData(); " class= "buttonStartTimer" > StartTimer</button>
+        <a href="#" id = "cancelbutton"class="buttonCancel">Cancel</a>
+       
+  <div class="ct-find-service">
+    <div class="ct-select-group ct-js-select-group">
+      <label for="cms-features">Project/Task</label>
+
+      <select class="ct-select ct-js-select" id="select1" name="ROLE">
+              <option value="Company Operation">Company Operation</option>
+              <option value="UX/UI">UX/UI</option>
+              <option value="QA">QA</option>
+              <option value="Frontend">Frontend</option>
+              <option value="BackEnd">BackEnd</option>
+              <option value="Fullstack">Fullstack</option>
+              <option value="JAVA">JAVA</option>
+              <option value="Sr. JAVA">Sr. JAVA</option>
+              <option value="Sr. Frontend">Sr. Frontend</option>
+              <option value="Intern">Intern</option>
+              <option value="Marketing">Marketing</option>
+              <option value="HR">HR</option>
+              <option value="DevOps">DevOps</option>
+            </select>
+</div>
+
+<div class="ct-select-group ct-js-select-group">
+  <select class="ct-select ct-js-select" id="select2" name="Recruiting">
+    <option value="Recruiting">Recruiting</option>
+            <option value="API">API</option>
+            <option value="Designing">Designing</option>
+            <option value="Quality management">Quality management</option>
+            <option value="Web development">Web development</option>
+  </select>
+</div>
+
+
+  </div>
+
+  <form>
+    <p><textarea id ="myTextarea"class ="textarea2" name="Notes" placeholder="Notes (optional)"></textarea></p>
+    
+  </form>
+
+  <form>
+    <p><input id= "myTextarea1" class ="textarea3" name="Notes" placeholder="00:00:00"></input></p>
+  </form>
+
+
+
+  
+  <script src="project.js"></script>
+    
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
